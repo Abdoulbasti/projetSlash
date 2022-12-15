@@ -14,7 +14,7 @@ Execution de tous les autres commandes se trouvant à un autre emplacement que c
 */
 int executionCommandesExternesAutres(char* arguments[MAX_ARGS_NUMBER])
 {
-    int codeRetour = 0;
+    int codeRetour = 1;
     int retourExec  = execv(arguments[0], arguments);
     char* exec = "execv";
     if(retourExec == -1) 
@@ -35,7 +35,7 @@ Execution des commandes extern
 */
 int executionCommandeExternes(char* arguments[MAX_ARGS_NUMBER])
 {
-    int codeRetour =0;
+    int codeRetour =1;
     int retourExec = execvp(arguments[0], arguments);
     char* exec = "execvp";
     

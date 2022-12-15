@@ -177,6 +177,11 @@ int interpretation_command(int argc, char* commandesAndArguments){
     //commandes externs
     else
     {
+        /*int r = commandesExternes(commandesAndArguments);
+        printf("%d\n", r);
+        return r;*/
+        //return commandesExternes(commandesAndArguments);
+
         return commandesExternes(commandesAndArguments);
     }
     
@@ -203,6 +208,7 @@ int main(int argc, char **argv){
         //affiche le prompt et attend l'utilisateur
         line = readline(prompt_format());
         
+
         //Traitement pour commandes externes
         char lineArray[MAX_ARGS_NUMBER];
         strcpy(lineArray, line);
@@ -255,6 +261,6 @@ int main(int argc, char **argv){
     char s[MAX_ARGS_NUMBER];
     strcpy(s, l);
     recupererCommandeEtArguments(s);
-    printf("%s\n", commandesEtArgument[2]);*/ 
+    printf("%s\n", commandesEtArgument[2]);*/
 
 }
